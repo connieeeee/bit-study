@@ -1,0 +1,78 @@
+# Study
+
+package test;
+
+public class mainClass {
+	
+	public static void main(String[] args) {
+		int i;
+		// test
+		System.out.println("test 입니다");
+		
+		// hello world
+		System.out.println("Hello World");
+		
+		// 한줄 주석문
+		// 그  문장의 설명 등을 기입할 경우
+		// 프로그램을 실행시 선택 실행
+		
+		/*
+		
+			범위 주석문
+			 
+			HTMl <!-- -->
+			Oracle --
+			JSP <%-- --%>
+			JavaScript (==) -> Web
+			
+		 */
+		
+		/*
+			Java : class + function	객체지향 (골격)	-> 설계
+			C언어 : Function 			절차지향		-> 순서
+		 */
+		
+		/*
+		 
+		 	출력문 -> 콘솔(문자, 숫자)		AWT, swing -> web
+		 	
+		 	System.out.println( 문자열 );
+		 	printf
+		 */
+		
+
+		System.out.println("헬로 Java");	// line
+		System.out.print("Hello Java");
+		
+		System.out.println();			// 행 바꿈
+		
+		System.out.println("문자열");
+		System.out.println('한');		// 문자
+		System.out.println('A');
+		System.out.println('1');
+		
+		System.out.println( 123 + 1 );
+		System.out.println( "123" + 1 );
+	
+		System.out.printf("%d", 123);	// f -- format
+		System.out.printf("%c", 'B');
+		System.out.printf("%s", "World");
+		System.out.printf("%f",12.34);
+		
+		System.out.println();
+		
+		System.out.printf("%d %s %c %f \n", 23,"문자열", 'C', 345.678);
+		
+		
+		// escape sequence \n(개행) \b(백스페이스) \t(띄어쓰기)
+		System.out.printf("%d\n", 123);	// f -- format
+		System.out.printf("%c\n", 'B');
+		System.out.printf("%s\n", "World");
+		System.out.printf("%f\n",12.34);
+		
+		System.out.printf("\t %d", 13);
+		
+	}
+		
+
+}
