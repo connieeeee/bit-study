@@ -1,0 +1,90 @@
+package bitClass;
+
+public class mainClass {
+
+	public static void main(String[] args) {
+		
+		// bit Operator
+		// 고급
+		// 처리 속도가 빠름
+		/*
+		 	bit : 0, 1
+		 	
+		 	&	AND
+		 	|	OR
+		 	^	XOR		-> 주로 보안
+		 	<<	left shift
+		 	>>	right shift
+		 	~	반전
+		 	1010 1100
+		 	A	 C
+		 	
+		 	1111 0000
+		 	F	 0
+		 	
+		 	1010 0000
+		 	A	 C
+		 */
+			
+		
+		// AND
+		int result;
+		
+		result = 0xAC & 0xf0;
+		System.out.println("result =" + result); // result = 160
+		
+		System.out.printf("%x\n", result); //a0
+		System.out.printf("0x%x\n", result); //0xa0
+		
+		result = 0x48 | 0xB4;
+		System.out.printf("0x%x\n", result); // 0xfc
+		
+		// XOR c4 78
+		result = 0xC4 ^ 0x78;
+		
+		System.out.printf("0x%x\n", result); // 0xfc
+		
+		// 반전 0 -> 1 1 -> 0 NOT
+		byte by = ~0x55; // 0101 0101 -> 1010 1010
+									// A	  A
+		System.out.printf("0x%x \n", by);
+		
+		// left left(*2)
+		/*
+		 		0000 0001	-> 1
+		 		0000 0010	-> 2
+		 		0000 0100	-> 4
+		 		8421 8421
+		 */
+		byte by1;
+	
+		
+		by1 = 0x1 << 1;
+		System.out.println("by1 = " + by1); // 2
+		
+		by1 <<= 1;
+		System.out.println("by1 = " + by1); // 4
+		
+		// right right(/2)
+		by1 >>=1;
+		System.out.println("by1 = " + by1); // 2
+
+		// num1 = 0x12
+		// num2 = 0x34
+		// number = ~(num1 & ~num2)
+		
+		int num1;
+		int num2;
+		int number;
+		
+		num1 = 0x12;
+		num2 = 0x34;
+		number = ~(num1 & ~num2);
+		System.out.println(number);
+		
+		System.out.printf("0x%x \n", number);
+		
+		
+	}
+
+}
