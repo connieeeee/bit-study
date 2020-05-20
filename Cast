@@ -1,0 +1,62 @@
+package castClass;
+
+public class mainClass {
+
+	public static void main(String[] args) {
+	
+		/*
+			 (자료형)변환
+			 boolean	1
+			 
+			 byte		1
+			 short		2
+			 int		4
+			 long		8
+			 
+			 float		4
+			 double		8
+			 
+		 	(자동 형 변환, 강제 (cast)자료 형 변환)
+		 
+		 */
+		
+		// 자동 형 변환
+		short sh = 10;
+		int num;
+		
+		num = sh;	// 자동 형 변환
+		System.out.println("num = " + num);
+		
+		num = 20;
+		sh = (short)num;	// 강제(cast) 형 변환
+		System.out.println("sh = " + sh);
+		
+		num = 128;		
+		byte by = (byte)num;
+		System.out.println("by = " + by);
+		
+		float f1;
+		f1 = (float)3 / 2;	// 정확한 소수점을 알아낼 때 강제 형 변환(float) 사용
+		System.out.println("f1 = " + f1);
+		
+		// 우선순위
+		long lo = 121212121212l;
+		float fl;
+		fl = lo;
+		
+		double d;
+		d= lo;
+		
+		System.out.println("fl = " + fl);	// 1.21212125E11 -> E11 = 10의 11승
+		System.out.println("d = " + d);		// 1.21212121212E11
+		
+		// E3 -> 10 * 10 * 10
+		// E-2-> (1/10) * (1/10)
+		
+		double value = 123.4567;
+		int n;
+		n = (int)value;		// 소수점 없앨 수 있음
+		System.out.println("n = " + n); // 123
+		
+	}
+}
