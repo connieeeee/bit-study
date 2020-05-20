@@ -7,10 +7,10 @@ public class mainClass {
 	public static void main(String[] args) {
 		int i;
 		// test
-		System.out.println("test 입니다");
+		System.out.println("test 입니다");	// test 입니다
 		
 		// hello world
-		System.out.println("Hello World");
+		System.out.println("Hello World"); // Hello World
 		
 		// 한줄 주석문
 		// 그  문장의 설명 등을 기입할 경우
@@ -51,13 +51,13 @@ public class mainClass {
 		System.out.println('A');
 		System.out.println('1');
 		
-		System.out.println( 123 + 1 );
-		System.out.println( "123" + 1 );
-	
-		System.out.printf("%d", 123);	// f -- format
-		System.out.printf("%c", 'B');
-		System.out.printf("%s", "World");
-		System.out.printf("%f",12.34);
+		System.out.println( 123 + 1 );		// 123
+		System.out.println( "123" + 1 );	// 1231
+		// f -- format
+		System.out.printf("%d", 123);		// 정수형
+		System.out.printf("%c", 'B');		// 문수형
+		System.out.printf("%s", "World");	// 문자열		
+		System.out.printf("%f",12.34);		// 실수형
 		
 		System.out.println();
 		
@@ -69,8 +69,13 @@ public class mainClass {
 		System.out.printf("%c\n", 'B');
 		System.out.printf("%s\n", "World");
 		System.out.printf("%f\n",12.34);
-		
 		System.out.printf("\t %d", 13);
+		
+		=> 123
+		   B
+		   World
+		   12.340000
+			    13
 		
 	}
 		
