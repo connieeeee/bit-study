@@ -1,0 +1,200 @@
+package ifClass;
+
+public class mainClass {
+
+	public static void main(String[] args) {
+		
+		/*
+			제어문
+			
+			- 조건
+				if		
+					if
+					else
+					else if
+				
+					논리연산자   : 같이 사용하는 경우가 많음
+							: &&(AND), ||(OR), !(NOT),
+					범위   : 부등호와 같이사용
+						: > < >= <= == !=
+				
+				switch
+					case
+					break
+					
+			- 순환(루프)
+			- 제어절
+			
+			형식:
+				조건( 조건성립(true/fale) ){
+					처리
+				}
+				if( number > 0 ) {
+					처리				
+				}
+		
+				if(number > 0 && number <= 10 && number != 5 ){
+					처리
+				}
+				
+				if( number < 5 ){
+					처리1				
+				}
+				if( number > 10 ){
+					처리1
+				}
+				if( number < 5 || number > 10 ){
+				
+				}
+				
+				if( 조건1 ) { 조건1 == true
+					처리 1
+				}
+				else{	조건1 == false
+					처리2
+				}
+				
+				조건 분기 n개만큼의 조건
+				if( 조건1 ){
+					처리1
+				}
+				else if( 조건2 ){		조건1 & 조건2가 안맞으면 처리가 안됨
+					처리2
+				}
+				else if( 조건3 ){
+					처리3
+				}
+				else{ 조건1 = 조건2= 조건3= false		else 단독으로는 사용불가
+					마지막 처리
+				}
+				
+								
+		*/
+		
+		int num = 6;
+		
+		if(num > 5) {
+			System.out.println("number는 5보다 크다");
+		}	
+		if(num >= 6) {
+			System.out.println("number는 6보다 크거나 작다");
+		}		
+		if(num == 6) {
+			System.out.println("number는 6이다.");
+		}			
+		if(num != 5) {
+			System.out.println("number는 6이다.");
+		}		
+		
+		/* if(num = 5) {
+			
+		}
+		*/
+		
+		if(num > 0 && num <10 ) {
+			System.out.println("number는 0부터 9사이의 수입니다.");
+		}
+		
+		if( num < 5 || num > 10) {
+			System.out.println("number는 5보다 작거나 10보다 크다");
+		}
+		
+		if(num > 10) {
+			System.out.println("number는 10보다 크다");
+		}
+		
+		else {	// num <= 10
+			System.out.println("number는 10보단 작거나 같다");
+		}
+		
+		
+		if(num > 10)System.out.println("number는 10보다 크다");
+		else 		System.out.println("number는 10보단 작거나 같다");
+		
+		// 삼항연산자	String = (조건)?"값1":"값2";
+		String str;
+		str = (num > 10)?"number는 10보다 크다":"number는 10보단 작거나 같다";
+		System.out.println(str);
+		
+		
+		System.out.println((num > 10)?"number는 10보다 크다":"number는 10보단 작거나 같다");
+		
+		
+		
+		// 조건 분기
+		num = 85;
+		
+		if(num == 100) {
+			System.out.println("100점입니다");
+		}
+		else if( num >= 90 && num <=100 ) {
+			System.out.println("90점 이상입니다.");
+		}
+		else if( num >= 80 && num < 90 ) {
+			System.out.println("80점 이상입니다");
+		}
+		
+		else {
+			System.out.println("80점 미만입니다");
+		}
+		
+		
+		
+		if(num == 100) 		System.out.println("100점입니다");
+		else if(num >= 90) 	System.out.println("90점 이상입니다.");
+		else if(num >= 80) System.out.println("80점 이상입니다");
+		else System.out.println("80점 미만입니다");
+
+		num = 95;	// 항상 높은 정수부터 비교
+		if(num == 100) 		System.out.println("100점입니다");
+		else if(num >= 80) System.out.println("80점 이상입니다");
+		else if(num >= 90) 	System.out.println("90점 이상입니다.");
+		else System.out.println("80점 미만입니다");
+		
+		// 조건문 안에 조건문
+		num = 86;
+		if(num >= 80 && num < 90) {
+			if(num >= 85) {
+				System.out.println("합격");
+			}
+			else {
+				System.out.println("불합격");
+			}
+		
+			
+		if(num >= 85 && num < 90) {
+		}
+				if(num >= 80 && num < 85) {
+		}
+		
+				
+		boolean b;
+		b = false;
+		
+		if(b == false) {
+			System.out.println("b == false 입니다");
+		}
+		
+		if( !b ) {
+			System.out.println("b == false 입니다");
+		}
+		
+		if( b ) {
+			System.out.println("b == true 입니다");
+		}
+		
+		if(true) {
+		
+		
+		
+		
+		
+		
+		}			
+
+	}
+	
+	
+	}}
+		
+		
