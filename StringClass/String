@@ -1,0 +1,25 @@
+/*
+		 
+		 String	: wrapper class
+		 		: 문자열 저장, 편집, 정보 취득
+		 		: 없으면 배열 사용가능
+		 				  
+		 */
+		
+		String str;
+		// class명 : String
+		// str : Object(객체), instance(주체) == class를 변수
+		
+		str = "안녕하세요";
+		System.out.println("str = " + str);
+		
+		char strChar[] = {'안', '녕'};
+		strChar[0] = '안';
+		strChar[1] = '녕';
+		
+		str = "안녕";
+		
+		String str1= new String("하이");
+		//String str1 = "하이";
+		
+		String str2 = " 반갑습니다 ";
