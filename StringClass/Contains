@@ -1,0 +1,4 @@
+// contains 탐색용	replace 먼저 하기
+		String str13 = "서울시 강남구";
+		boolean b1 = str13.contains("서울");
+		System.out.println("b1 = " + b1);
