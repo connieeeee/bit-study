@@ -1,0 +1,7 @@
+// 범위를 통해서 문자열 취득 substring
+		String str10 = "abcdefghij";
+		String substr = str10.substring(0, 4); // 4번째 전까지
+		System.out.println("subStr = " + substr);
+
+		substr = str10.substring(4); 
+		System.out.println("subStr = " + substr);
