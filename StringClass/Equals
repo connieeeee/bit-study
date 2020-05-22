@@ -1,0 +1,18 @@
+    String str5 = "hello";
+		String str6 = "hell";	
+		
+		str6 = str6 + "o";
+		
+		if(str5 == str6) {
+			System.out.println("str5와 str6는 같은 문자열입니다.");
+		}else {
+			System.out.println("str5와 str6는 다른 문자열입니다."); // 초기값이 다르기 때문에 
+			
+		}
+		
+		
+		boolean b = str5.equals(str6);	// 정확한 문자열	
+		if(b == true) {
+			
+			System.out.println("str5와 str6는 같은 문자열입니다.");
+		}
