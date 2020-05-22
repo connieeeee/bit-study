@@ -1,0 +1,106 @@
+package whileClass;
+
+public class mainClass {
+
+	public static void main(String[] args) {
+		/*
+		 	while		순환문 = loop문		사용 빈도 수는 적다
+		 	do while	 
+			
+			while 형식:
+					변수 선언
+					변수 초기화
+					while( 조건 ){	// 조건이 안맞을 때까지 loop
+						처리
+						변수 연산
+					}
+				
+			do while 형식:
+						변수 선언
+						변수 초기화
+						do {
+							처리
+							연산식
+						} while( 조건 );
+						
+				
+				
+			for( 변수 초기화 ; 조건; 연산식){
+				처리
+			}
+		
+		 */
+		
+		int w;
+		
+		w = 0;
+		while( w < 10 ) {
+			System.out.println("W= " + w);
+			w++;
+		}
+		
+		
+		int dw;
+		
+		dw = 0;
+		do {					// 조건이 성립이 안돼도 무조건 한 번은 나온다. 원치않은 실행
+			System.out.println("dw = " + dw);
+			dw++;
+		}while(dw < 10);
+		
+		
+		for(int i = 0; i < 10; i++) {
+			System.out.println("i = " + i);
+			for (int j = 0; j < 5; j++) {
+				System.out.println(" j = " + j);
+			}
+			
+		}
+		
+		int w1, w2;
+		w1 = w2 = 0;
+		
+		while(w1 < 10) {
+			System.out.println("w1 = " + w1);
+			
+			w2 = 0;		// 이중 while문은 안에서도 초기화 해줘야됨
+			while(w2 < 5) {		// w2는 5인 상태
+				System.out.println("	w2 = " + w2);
+				w2++;
+			}
+			w1++;
+			
+			
+		}
+		
+		/*		// 무한 루프
+		w1=0;
+		while(true) {
+			System.out.println("w1 = "+ w1);
+			w1++;
+		}
+		*/
+
+		
+		/*
+		 프로그램의 
+		 	1. Initialize (초기화) -> init
+		 	
+		 	2. loop (순환)
+		 		while(true){
+		 										// 작업
+		 			 1. 입력
+		 			 2. 출력
+		 		}
+		 	
+		 	3. release(해방)
+		  
+		 
+		 */
+		
+		
+		
+		
+	}
+
+}
