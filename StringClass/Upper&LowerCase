@@ -1,0 +1,11 @@
+// toUpperCase	모든 문자를 대문자로 변경
+		
+		// toLowerCase	모든 문자는 소문자로 변경
+		
+		String str11 = "abcDEF";
+		String upStr = str11.toUpperCase();
+		System.out.println("upStr= " + upStr);
+
+		String lowStr = str11.toLowerCase();
+		System.out.println("lowStr= " + lowStr);
+		
