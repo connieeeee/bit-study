@@ -1,0 +1,6 @@
+// charAt	array[2] ->
+		// String str = "hello";	== charArray[5] = "가나다라마";
+		String str14= "가나다라마";
+		char ch = str14.charAt(3);
+		System.out.println("ch = " + ch);
+		
