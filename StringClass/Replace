@@ -1,0 +1,4 @@
+// replace(수정)		문자열 편집할 때 자주 사용
+		String str8 = "A*B**C";
+		String repStr = str8.replace("*", "!");
+		System.out.println("repStr: " + repStr);
