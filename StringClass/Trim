@@ -1,0 +1,5 @@
+// trim	앞,뒤의 공백 제거	주로 검색어, 아이디에 사용
+		String str12 = "              java c언 python     ";
+		String trimstr = str12.trim();
+		System.out.println("trimstr = " + trimstr +"++");
+		
