@@ -1,0 +1,15 @@
+    // indexOf : 지정문자의 위치	앞부터 시작
+		// lastindexOf : 뒤부터 시작
+		
+		char cArr[] = {'a', 'b', 'c'};
+		
+		String str7 = "abcdefghabcd";
+		int n;
+		n = str7.indexOf("d");
+		
+		System.out.println("n = " + n + "번째에 있습니다");
+				
+		
+		n= str7.lastIndexOf("d");
+		System.out.println("n = " + n + "번째에 있습니다"  );
+		
