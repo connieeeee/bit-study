@@ -1,0 +1,21 @@
+// valueOf
+		/*
+		 	문자열 -> 숫자		"123" -> 123
+		 	숫자 -> 문자열		 123  -> "123"
+		 
+		 	숫자 -> 문자열
+		 
+		 */
+		int num = 123;
+		long lo = 1212L;
+		double d = 123.14;
+		
+		String is = String.valueOf(num);
+		String ls = String.valueOf(lo);
+		String ds = String.valueOf(d);
+		
+		System.out.println(is + " " + ls + " " + ds);
+		
+		int number = 234;
+		String numStr = number + "";
+		
