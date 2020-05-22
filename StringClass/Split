@@ -1,0 +1,25 @@
+/*
+		 split(-)	: token을 활용해서 문자열을 자른다. ( 편집)
+		 
+		 aaa-bbb-ccc	- : token
+		 
+		 저장매체 : 파일, database(oracle)
+		 
+		 홍길동-24-1992/10/21-180
+		
+		 */
+		
+		String str9 = "홍길동-24-1992/10/21-180.2";
+		String splitArr[] = str9.split("-");
+		
+		for (int i = 0; i < splitArr.length; i++) {
+			System.out.println(splitArr[i]);
+		}
+		
+		
+		/*
+		System.out.println(splitArr[0]);
+		System.out.println(splitArr[1]);
+		System.out.println(splitArr[2]);
+		System.out.println(splitArr[3]);
+		*/
