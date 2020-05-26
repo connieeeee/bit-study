@@ -1,0 +1,76 @@
+
+public class mainClass {
+
+	public static void main(String[] args) {
+		/*
+		  	Wrapper Class
+		  	열반 자료형(int, char)을 클래스화 한것
+		  	Collection  : list, map
+		  	
+		  	일반자료형						class
+		  	boolean							Boolean
+		  	
+	  		byte							Byte
+	  		short							Short
+	  		int								Integer	(☆)
+	  		long							Long
+	  		
+	  		float							Float
+	  		double							Double	(☆)
+	  		
+	  		char							Character
+	  		char[]							String	(☆☆☆☆☆)
+	  		
+		  
+		  
+		 */
+
+		
+		// 숫자 -> 문자열
+		// valueOf
+		// 		123 + "";	123.456 + ""; => "123.456"
+		
+		// 문자열 -> 숫자
+		String strNum = "234";
+		int cnum = Integer.parseInt(strNum);
+			System.out.println("cnum= " + cnum);		// 234
+			System.out.println("cnum= " + (cnum+1));	// 235
+			
+		String dstrNum = "123.456";
+		double dnum = Double.parseDouble(dstrNum);
+			System.out.println("dnum= " + dnum);			// 123.456
+			System.out.println("dnum= " + (dnum+ 0.1));		// 123.556
+				
+			
+			
+		// toString();		-> 문자열로 변경해 준다.	-> valueOf()
+			
+			Double dou = 234.453;
+			Double dou1 = new Double("234.654");
+			
+			dou.toString();
+			
+			
+		// 10진수 -> 2진수
+		int n10 = 12;
+		String n2 = Integer.toBinaryString(n10);
+		System.out.println(n2);
+			
+		
+		n2 = "11001010";
+		// 2진수 -> 10진수
+		n10 = Integer.parseInt(n2, 2);		// 2진수라고 알려주기
+		System.out.println(n10);
+
+		// 10진수 -> 16진수
+		
+		//int n16 = 
+		//n10 = Integer.toHexString(n16);
+		
+		
+		// 16진수 -> 10진수
+		
+		
+	}
+
+}
